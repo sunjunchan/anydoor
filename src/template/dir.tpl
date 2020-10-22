@@ -18,7 +18,7 @@
 <body>
     {{#each files}}
     {{!-- 数据与files同级，到上级 --}}
-        <a href="{{../dir}}/{{this}}">{{this}}</a>
+        <a href="{{../dir}}/{{file}}">[{{icon}}]{{file}}</a>
     {{/each}}
 </body>
 </html>
