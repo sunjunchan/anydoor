@@ -30,8 +30,8 @@ module.exports = async function(req,res,filePath){
                 const dir = path.relative(config.root,filePath)
                 const data = {
                     title:path.basename(filePath),
-                    // dir: dir?`/${dir}`:'' ,//从根路径开始
-                    dir:dir,
+                    dir: dir?`/${dir}`:'' ,//从根路径开始
+                    // dir:dir,
                     files
                 }
                 res.end(template(data))
